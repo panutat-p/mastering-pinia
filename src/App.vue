@@ -14,5 +14,9 @@ import { RouterLink, RouterView } from 'vue-router'
       </div>
     </nav>
   </header>
-  <RouterView />
+  <main class="h-screen bg-stone-200">
+    <section class="container mx-auto pt-5">
+      <RouterView />
+    </section>
+  </main>
 </template>
