@@ -5,7 +5,7 @@ const BASE_URL = 'https://jsonplaceholder.typicode.com'
 
 export const useJsonStore = defineStore('json', () => {
   const todo = ref<TodoPayload | null>(null)
-  const posts = ref<PostPayload | null>(null)
+  const posts = ref<PostPayload[] | null>(null)
 
   const fetchTodo = async () => {
     const res = await fetch(`${BASE_URL}/todos/1`)
