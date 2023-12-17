@@ -1,4 +1,4 @@
-# boilerplate-vue3
+# mastering-pinia
 
 https://vuejs.org/guide/quick-start.html
 
@@ -7,6 +7,16 @@ https://prettier.io/docs/en/install
 https://tailwindcss.com/docs/guides/vite
 
 https://daisyui.com/docs/install
+
+## Resources
+
+https://vuejs.org/guide/quick-start.html
+
+https://pinia.vuejs.org/getting-started.html
+
+https://masteringpinia.com/lessons
+
+https://github.com/MasteringPinia/mastering-pinia--code
 
 ## Scaffolding
 
