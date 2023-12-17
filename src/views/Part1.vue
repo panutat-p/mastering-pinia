@@ -1,7 +1,7 @@
 <script lang="ts">
 import { computed, ref } from 'vue'
 
-let store
+let store: any
 
 export function useBadStore() {
   if (!store) {
