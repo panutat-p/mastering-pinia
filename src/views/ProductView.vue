@@ -9,7 +9,7 @@ const json = useJsonStore()
   <section class="mb-10">
     <button v-on:click="json.fetchTodo" class="btn btn-active btn-primary mb-2">Fetch todo</button>
     <div v-if="json.todo">
-      <div class="card w-4/12 bg-neutral text-white shadow-xl mb-2">
+      <div class="card w-4/12 bg-neutral text-white text-xs shadow-xl mb-2">
         <div class="card-body">
           <p>id: {{ json.todo?.id }}</p>
           <p>user_id: {{ json.todo?.userId }}</p>
@@ -25,7 +25,7 @@ const json = useJsonStore()
       <div
         v-for="(post, index) in json.posts"
         v-bind:key="index"
-        class="card w-10/12 bg-neutral text-white shadow-xl mb-2"
+        class="card w-8/12 bg-neutral text-white text-xs shadow-xl mb-2"
       >
         <div class="card-body">
           <p>{{ post.title }}</p>
