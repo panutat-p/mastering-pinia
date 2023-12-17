@@ -24,5 +24,6 @@ export function defineStore<R>(fn: () => R) {
     }
     return store.get(fn) as R
   }
+
   return useStore
 }
