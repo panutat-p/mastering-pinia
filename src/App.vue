@@ -10,6 +10,7 @@ import { RouterLink, RouterView } from 'vue-router'
       </div>
       <div class="text-sm">
         <RouterLink v-bind:to="{ name: `Home` }" class="text-white hover:text-amber-200 mr-4">Home</RouterLink>
+        <RouterLink v-bind:to="{ name: `Product` }" class="text-white hover:text-amber-200 mr-4">Products</RouterLink>
         <RouterLink v-bind:to="{ name: `About` }" class="text-white hover:text-amber-200 mr-4">About</RouterLink>
       </div>
     </nav>
