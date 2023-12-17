@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useJsonStore } from '@/stores/json'
+import SquareSpinner from '@/components/SquareSpinner.vue'
 
 const json = useJsonStore()
 </script>
@@ -17,6 +18,9 @@ const json = useJsonStore()
         </div>
       </div>
     </div>
+    <div v-else-if="json.isTodoLoading">
+      <SquareSpinner />
+    </div>
     <div v-else>todo is null</div>
   </section>
   <section class="mb-10">
@@ -31,6 +35,9 @@ const json = useJsonStore()
           <p>{{ post.title }}</p>
         </div>
       </div>
+    </div>
+    <div v-else-if="json.isPostsLoading">
+      <SquareSpinner />
     </div>
     <div v-else>posts is null</div>
   </section>
