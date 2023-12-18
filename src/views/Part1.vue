@@ -3,6 +3,11 @@ import { computed, ref } from 'vue'
 
 let store: any
 
+/**
+ * useBadStore is a bad store because:
+ * 1. If init in a component, this store will be attached to the component life span.
+ * 2. JS GC will destroy this store.
+ */
 export function useBadStore() {
   if (!store) {
     const n = ref(0)
