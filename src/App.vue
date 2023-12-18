@@ -21,6 +21,9 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink v-bind:to="{ name: `Part3` }" class="text-white text-xl font-bold hover:text-amber-200 mr-6"
           >Part3</RouterLink
         >
+        <RouterLink v-bind:to="{ name: `Part4` }" class="text-white text-xl font-bold hover:text-amber-200 mr-6"
+          >Part4</RouterLink
+        >
       </div>
     </nav>
   </header>

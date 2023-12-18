@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Part1 from '@/views/Part1.vue'
 import Part2 from '@/views/Part2.vue'
 import Part3 from '@/views/Part3.vue'
+import Part4 from '@/views/Part4.vue'
 import ProductView from '@/views/ProductView.vue'
 
 const router = createRouter({
@@ -27,6 +28,11 @@ const router = createRouter({
       path: '/part3',
       name: 'Part3',
       component: Part3,
+    },
+    {
+      path: '/part4',
+      name: 'Part4',
+      component: Part4,
     },
   ],
 })
